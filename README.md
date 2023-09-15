@@ -3,8 +3,6 @@
 This web application fetches exchange rate data from the National Bank of Ukraine and writes it to a Google Sheet.
 ## Requirements
 
-To run this application, make sure you have the following Python libraries installed:
-
 - Flask==2.2.5
 - google-api-python-client==2.99.0
 - google-auth-oauthlib==1.1.0
@@ -22,5 +20,10 @@ Replace `YYYY-MM-DD` with the desired date range. Two arguments are required:
 
 - `update_from`: The start date in the format `YYYY-MM-DD`.
 - `update_to`: The end date in the format `YYYY-MM-DD`.
+
+Example:
+```commandline
+https://exchangerates1-68bbdcfca525.herokuapp.com/exchange_rates/?update_from=2018-03-13&update_to=2019-03-06
+```
 
 
